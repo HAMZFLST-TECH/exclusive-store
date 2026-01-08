@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Exclusive E-Commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="font-sans text-black">
+
+    <div class="bg-black text-white text-xs sm:text-sm py-3">
+        <div class="container-custom flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex-1 text-center">
+                <span>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</span>
+                <a href="#" class="font-bold underline ml-2">ShopNow</a>
+            </div>
+            <div class="flex items-center gap-2 cursor-pointer">
+                <span>English</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- nav start -->
+
+    <nav class="border-b border-gray-200 sticky top-0 bg-white z-50">
+        <div class="container-custom flex justify-between items-center py-4 mt-4 mb-4">
+            <a href="#" class="text-2xl font-bold tracking-wider">Exclusive</a>
+
+            <ul class="hidden md:flex gap-12 font-medium">
+                <li><a href="index.html" class="border-b-2 border-gray-400 pb-1">Home</a></li>
+                <li><a href="contact.html" class="hover:text-primary transition">Contact</a></li>
+                <li><a href="about.html" class="hover:text-primary transition">About</a></li>
+                <li><a href="signup.html" class="hover:text-primary transition">Sign Up</a></li>
+            </ul>
+
+            <div class="flex items-center gap-4 sm:gap-6">
+                <div class="hidden sm:flex items-center bg-gray-100 rounded py-2 px-4 w-60">
+                    <input type="text" placeholder="What are you looking for?"
+                        class="bg-transparent text-xs w-full outline-none">
+                    <i class="fa-solid fa-magnifying-glass text-gray-500"></i>
+                </div>
+                <div class="flex gap-4 text-xl">
+                    <a href="Wishlist.html"><i class="fa-regular fa-heart"></i></a>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="account.html"><i
+                            class="fa-regular fa-user bg-primary text-white rounded-full p-1 text-sm h-7 w-7 flex items-center justify-center"></i></a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t p-4 absolute w-full shadow-lg">
+            <ul class="flex flex-col gap-4 font-medium">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- nav end -->
+
+    <!-- top hero section start -->
+
+    <main class="container-custom py-10 md:py-20">
+        <nav class="flex gap-3 text-sm mb-10 md:mb-20 text-gray-400">
+            <a href="index.html" class="hover:text-black transition">Home</a>
+            <span>/</span>
+            <span class="text-black font-medium">Contact</span>
+        </nav>
+
+        <section class="container mx-auto px-4 md:px-12 pb-20 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8">Our Story</h2>
+                <p class="mb-6 leading-relaxed">
+                    Launched in 2015, Exclusive is South Asia's premier online shopping marketplace with an active
+                    presence in Bangladesh. Supported by wide range of tailored marketing, data and service solutions,
+                    Exclusive has 10,500 sellers and 300 brands and serves 3 million customers across the region.
+                </p>
+                <p class="leading-relaxed">
+                    Exclusive has more than 1 Million products to offer, growing at a very fast. Exclusive offers a
+                    diverse assortment in categories ranging from consumer.
+                </p>
+            </div>
+            <div class="md:w-1/2">
+                <img src="assests/sideshopping.png"
+                    alt="Shopping" class="rounded shadow-lg w-full">
+            </div>
+        </section>
+
+        <!-- top hero section end -->
+
+        <!-- featured section start -->
+
+        <section class="container mx-auto px-4 md:px-12 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div
+                class="border border-gray-200 p-8 rounded flex flex-col items-center hover:bg-[#DB4444] hover:text-white transition-colors group">
+                <div class="bg-gray-200 p-3 rounded-full group-hover:bg-white/30 mb-4">
+                    <div class="bg-black text-white p-3 rounded-full group-hover:bg-white group-hover:text-black">
+                        <i class="fa-solid fa-store text-2xl"></i>
+                    </div>
+                </div>
+                <h3 class="text-3xl font-bold">10.5k</h3>
+                <p class="text-sm">Sellers active our site</p>
+            </div>
+
+            <div class="bg-[#DB4444] text-white p-8 rounded flex flex-col items-center border border-[#DB4444]">
+                <div class="bg-white/30 p-3 rounded-full mb-4">
+                    <div class="bg-white text-black p-3 rounded-full">
+                        <i class="fa-solid fa-dollar-sign text-2xl"></i>
+                    </div>
+                </div>
+                <h3 class="text-3xl font-bold">33k</h3>
+                <p class="text-sm">Monthly Product Sale</p>
+            </div>
+
+            <div
+                class="border border-gray-200 p-8 rounded flex flex-col items-center hover:bg-[#DB4444] hover:text-white transition-colors group">
+                <div class="bg-gray-200 p-3 rounded-full group-hover:bg-white/30 mb-4">
+                    <div class="bg-black text-white p-3 rounded-full group-hover:bg-white group-hover:text-black">
+                        <i class="fa-solid fa-bag-shopping text-2xl"></i>
+                    </div>
+                </div>
+                <h3 class="text-3xl font-bold">45.5k</h3>
+                <p class="text-sm">Customer active in our site</p>
+            </div>
+
+            <div
+                class="border border-gray-200 p-8 rounded flex flex-col items-center hover:bg-[#DB4444] hover:text-white transition-colors group">
+                <div class="bg-gray-200 p-3 rounded-full group-hover:bg-white/30 mb-4">
+                    <div class="bg-black text-white p-3 rounded-full group-hover:bg-white group-hover:text-black">
+                        <i class="fa-solid fa-sack-dollar text-2xl"></i>
+                    </div>
+                </div>
+                <h3 class="text-3xl font-bold">25k</h3>
+                <p class="text-sm">Annual gross sale in our site</p>
+            </div>
+        </section>
+
+        <!-- featured section end -->
+
+        <!-- founder section start -->
+
+        <section class="container mx-auto px-4 md:px-12 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="bg-gray-100 pt-8 px-8 mb-4 flex justify-center h-96 items-end">
+                        <img src="assests/person1.png"
+                            alt="Tom Cruise" class=" h-full object-cover">
+                    </div>
+                    <h4 class="text-2xl font-bold">Tom Cruise</h4>
+                    <p class="text-gray-600 mb-2">Founder & Chairman</p>
+                    <div class="flex space-x-4 text-lg">
+                        <i class="fa-brands fa-twitter cursor-pointer"></i>
+                        <i class="fa-brands fa-instagram cursor-pointer"></i>
+                        <i class="fa-brands fa-linkedin-in cursor-pointer"></i>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-gray-100 pt-8 px-8 mb-4 flex justify-center h-96 items-end">
+                        <img src=""
+                            alt="Emma Watson" class=" h-full object-cover">
+                    </div>
+                    <h4 class="text-2xl font-bold">Emma Watson</h4>
+                    <p class="text-gray-600 mb-2">Managing Director</p>
+                    <div class="flex space-x-4 text-lg">
+                        <i class="fa-brands fa-twitter cursor-pointer"></i>
+                        <i class="fa-brands fa-instagram cursor-pointer"></i>
+                        <i class="fa-brands fa-linkedin-in cursor-pointer"></i>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-gray-100 pt-8 px-8 mb-4 flex justify-center h-96 items-end">
+                        <img src="assests/person2.png"
+                            alt="Will Smith" class=" h-full object-cover">
+                    </div>
+                    <h4 class="text-2xl font-bold">Will Smith</h4>
+                    <p class="text-gray-600 mb-2">Product Designer</p>
+                    <div class="flex space-x-4 text-lg">
+                        <i class="fa-brands fa-twitter cursor-pointer"></i>
+                        <i class="fa-brands fa-instagram cursor-pointer"></i>
+                        <i class="fa-brands fa-linkedin-in cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-10 space-x-2">
+                <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+                <span class="w-3 h-3 rounded-full bg-[#DB4444] border-2 border-gray-400"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+            </div>
+        </section>
+        <!-- founders section end -->
+
+        <!-- facilities section start -->
+
+        <section class="container mx-auto px-4 md:px-12 py-20 grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+            <div>
+                <div class="bg-gray-300 p-2 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                    <div class="bg-black text-white p-3 rounded-full">
+                        <i class="fa-solid fa-truck-fast text-xl"></i>
+                    </div>
+                </div>
+                <h5 class="font-bold text-lg uppercase">Free and Fast Delivery</h5>
+                <p class="text-sm">Free delivery for all orders over $140</p>
+            </div>
+            <div>
+                <div class="bg-gray-300 p-2 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                    <div class="bg-black text-white p-3 rounded-full">
+                        <i class="fa-solid fa-headset text-xl"></i>
+                    </div>
+                </div>
+                <h5 class="font-bold text-lg uppercase">24/7 Customer Service</h5>
+                <p class="text-sm">Friendly 24/7 customer support</p>
+            </div>
+            <div>
+                <div class="bg-gray-300 p-2 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                    <div class="bg-black text-white p-3 rounded-full">
+                        <i class="fa-solid fa-shield-check text-xl"></i>
+                    </div>
+                </div>
+                <h5 class="font-bold text-lg uppercase">Money Back Guarantee</h5>
+                <p class="text-sm">We return money within 30 days</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- facilities section end -->
+
+    <!-- footer start -->
+
+    <footer class="bg-black text-white pt-20 pb-6">
+        <div class="container-custom grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-16">
+            <div>
+                <h3 class="text-2xl font-bold mb-6">Exclusive</h3>
+                <h4 class="text-lg font-medium mb-4">Subscribe</h4>
+                <p class="text-sm mb-4">Get 10% off your first order</p>
+                <div
+                    class="border border-white rounded px-4 py-3 flex justify-between items-center w-full max-w-[220px]">
+                    <input type="email" placeholder="Enter your email"
+                        class="bg-transparent outline-none text-sm w-full placeholder-gray-500">
+                    <i class="fa-regular fa-paper-plane"></i>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-medium mb-6">Support</h3>
+                <ul class="space-y-4 text-sm text-gray-300">
+                    <li>111 Bijoy sarani, Dhaka, <br> DH 1515, Bangladesh.</li>
+                    <li>exclusive@gmail.com</li>
+                    <li>+88015-88888-9999</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-medium mb-6">Account</h3>
+                <ul class="space-y-4 text-sm text-gray-300">
+                    <li><a href="account.html">My Account</a></li>
+                    <li><a href="login.html">Login / Register</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="Wishlist.html">Wishlist</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-medium mb-6">Quick Link</h3>
+                <ul class="space-y-4 text-sm text-gray-300">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-medium mb-6">Download App</h3>
+                <p class="text-xs text-gray-400 mb-2">Save $3 with App New User Only</p>
+                <div class="flex gap-2">
+                    <div class="bg-white w-20 h-20 p-1">
+                        <img src="assests/Qrcode.png" alt="QR"
+                            class="w-full h-full">
+                    </div>
+                    <div class="flex flex-col gap-2 h-20">
+                        <div
+                            class="bg-black border border-gray-600 rounded px-2 py-1 flex items-center gap-1 w-28 cursor-pointer">
+                            <i class="fa-brands fa-google-play text-xl"></i>
+                            <div class="flex flex-col leading-none">
+                                <span class="text-[8px] uppercase">Get it on</span>
+                                <span class="text-[10px] font-medium">Google Play</span>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-black border border-gray-600 rounded px-2 py-1 flex items-center gap-1 w-28 cursor-pointer">
+                            <i class="fa-brands fa-apple text-xl"></i>
+                            <div class="flex flex-col leading-none">
+                                <span class="text-[7px] uppercase">Download on the</span>
+                                <span class="text-[10px] font-medium">App Store</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-6 mt-6 text-xl">
+                    <i class="fa-brands fa-facebook-f cursor-pointer hover:text-gray-400"></i>
+                    <i class="fa-brands fa-twitter cursor-pointer hover:text-gray-400"></i>
+                    <i class="fa-brands fa-instagram cursor-pointer hover:text-gray-400"></i>
+                    <i class="fa-brands fa-linkedin-in cursor-pointer hover:text-gray-400"></i>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 text-center py-6 text-gray-500 text-sm">
+            &copy; Copyright HAMZFLST.TECH 2026. All right reserved
+        </div>
+    </footer>
+
+    <!-- footer end -->
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

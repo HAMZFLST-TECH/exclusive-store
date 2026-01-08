@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Exclusive</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#DB4444',
+                        secondary: '#F5F5F5',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .container-custom {
+                @apply max-w-[1170px] mx-auto px-4;
+            }
+            .input-label {
+                @apply block text-gray-400 text-sm mb-2;
+            }
+            .checkout-input {
+                @apply w-full bg-secondary rounded px-4 py-3 outline-none focus:ring-1 focus:ring-black transition;
+            }
+            .btn-primary {
+                @apply bg-primary text-white px-12 py-4 rounded font-medium hover:bg-red-600 transition duration-300;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-sans text-black antialiased">
+
+    <!-- banner start -->
+    <div class="bg-black text-white text-xs sm:text-sm py-3">
+        <div class="container-custom flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex-1 text-center">
+                <span>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</span>
+                <a href="#" class="font-bold underline ml-2">ShopNow</a>
+            </div>
+            <div class="flex items-center gap-2 cursor-pointer">
+                <span>English</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- nav start -->
+
+    <nav class="border-b border-gray-200 sticky top-0 bg-white z-50">
+        <div class="container-custom flex justify-between items-center py-4 mt-4 mb-4">
+            <a href="#" class="text-2xl font-bold tracking-wider">Exclusive</a>
+
+            <ul class="hidden md:flex gap-12 font-medium">
+                <li><a href="index.html" class="border-b-2 border-gray-400 pb-1">Home</a></li>
+                <li><a href="contact.html" class="hover:text-primary transition">Contact</a></li>
+                <li><a href="about.html" class="hover:text-primary transition">About</a></li>
+                <li><a href="signup.html" class="hover:text-primary transition">Sign Up</a></li>
+            </ul>
+
+            <div class="flex items-center gap-4 sm:gap-6">
+                <div class="hidden sm:flex items-center bg-gray-100 rounded py-2 px-4 w-60">
+                    <input type="text" placeholder="What are you looking for?"
+                        class="bg-transparent text-xs w-full outline-none">
+                    <i class="fa-solid fa-magnifying-glass text-gray-500"></i>
+                </div>
+                <div class="flex gap-4 text-xl">
+                    <a href="Wishlist.html"><i class="fa-regular fa-heart"></i></a>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="account.html"><i
+                            class="fa-regular fa-user bg-primary text-white rounded-full p-1 text-sm h-7 w-7 flex items-center justify-center"></i></a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t p-4 absolute w-full shadow-lg">
+            <ul class="flex flex-col gap-4 font-medium">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- nav end -->
+
+    <!-- breadcrumb start -->
+    <main class="container-custom py-10 md:py-20">
+        <nav class="flex flex-wrap gap-2 md:gap-3 text-xs md:text-sm mb-10 md:mb-20 text-gray-400">
+            <a href="index.html" class="hover:text-black">Account</a>
+            <span>/</span>
+            <a href="account.html" class="hover:text-black">My Account</a>
+            <span>/</span>
+            <a href="product.html" class="hover:text-black">Product</a>
+            <span>/</span>
+            <a href="cart.html" class="hover:text-black">View Cart</a>
+            <span>/</span>
+            <span class="text-black font-medium">CheckOut</span>
+        </nav>
+        <!-- breadcrumb end -->
+
+        <!-- main form start -->
+        <h2 class="text-3xl md:text-4xl font-medium mb-8 md:mb-12">Billing Details</h2>
+
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-32">
+
+            <form class="w-full lg:w-1/2 space-y-6 md:space-y-8">
+                <div class="space-y-2">
+                    <label class="input-label">First Name<span class="text-primary">*</span></label>
+                    <input type="text" class="checkout-input" required>
+                </div>
+                <div class="space-y-2">
+                    <label class="input-label">Company Name</label>
+                    <input type="text" class="checkout-input">
+                </div>
+                <div class="space-y-2">
+                    <label class="input-label">Street Address<span class="text-primary">*</span></label>
+                    <input type="text" class="checkout-input" required>
+                </div>
+                <div class="space-y-2">
+                    <label class="input-label">Apartment, floor, etc. (optional)</label>
+                    <input type="text" class="checkout-input">
+                </div>
+                <div class="space-y-2">
+                    <label class="input-label">Town/City<span class="text-primary">*</span></label>
+                    <input type="text" class="checkout-input" required>
+                </div>
+                <div class="space-y-2">
+                    <label class="input-label">Phone Number<span class="text-primary">*</span></label>
+                    <input type="tel" class="checkout-input" required>
+                </div>
+                <div class="space-y-2">
+                    <label class="input-label">Email Address<span class="text-primary">*</span></label>
+                    <input type="email" class="checkout-input" required>
+                </div>
+
+                <div class="flex items-start gap-3 pt-2">
+                    <input type="checkbox" id="save-info" class="w-5 h-5 mt-0.5 accent-primary cursor-pointer">
+                    <label for="save-info" class="text-sm cursor-pointer leading-tight">Save this information for faster
+                        check-out next time</label>
+                </div>
+            </form>
+
+            <!-- main from end -->
+
+
+            <!-- cart items section start -->
+
+            <div class="w-full lg:w-[430px] lg:pt-8">
+                <div class="space-y-6 md:space-y-8">
+
+                    <div class="space-y-6">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 flex items-center justify-center">
+                                    <img src="assests/monitor.png"
+                                        alt="Gamepad" class="max-w-full max-h-full object-contain">
+                                </div>
+                                <span class="text-sm md:text-base">LCD Monitor</span>
+                            </div>
+                            <span class="text-sm md:text-base">$650</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 flex items-center justify-center">
+                                    <img src="assests/gamepad.png"
+                                        alt="Monitor" class="max-w-full max-h-full object-contain">
+                                </div>
+                                <span class="text-sm md:text-base">H1 Gamepad</span>
+                            </div>
+                            <span class="text-sm md:text-base">$1100</span>
+                        </div>
+                    </div>
+
+                    <!-- cart items section end -->
+
+
+                    <!-- billing details section start -->
+
+                    <div class="border-b border-gray-300 pb-4 space-y-4">
+                        <div class="flex justify-between text-sm md:text-base">
+                            <span>Subtotal:</span>
+                            <span>$1750</span>
+                        </div>
+                        <div class="flex justify-between text-sm md:text-base">
+                            <span>Shipping:</span>
+                            <span>Free</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between text-sm md:text-base font-normal">
+                        <span>Total:</span>
+                        <span>$1750</span>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center gap-4">
+                                <input type="radio" name="payment" id="bank" class="w-5 h-5 accent-black cursor-pointer"
+                                    checked>
+                                <label for="bank" class="cursor-pointer text-sm md:text-base">Bank</label>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="assests/kash.png"
+                                    alt="Kash" class="h-3 md:h-4">
+                                <img src="assests/visa.png"
+                                    alt="Visa" class="h-3 md:h-4">
+                                <img src="assests/Mastercard.png"
+                                    alt="Mastercard" class="h-3 md:h-4">
+                                <img src="assests/hindibank.png"
+                                    alt="Hindibank" class="h-3 md:h-4">
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <input type="radio" name="payment" id="cash" class="w-5 h-5 accent-black cursor-pointer">
+                            <label for="cash" class="cursor-pointer text-sm md:text-base">Cash on delivery</label>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <input type="text" placeholder="Coupon Code"
+                            class="flex-1 border border-black rounded px-6 py-3 md:py-4 outline-none text-sm">
+                        <button class="btn-primary py-3 md:py-4 px-8 md:px-12 text-sm whitespace-nowrap">Apply
+                            Coupon</button>
+                    </div>
+
+                    <div class="pt-2">
+                        <button class="btn-primary w-full md:w-auto px-12">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- billing  details section end -->
+
+    <!-- footer start -->
+
+    <footer class="bg-black text-white pt-20 pb-6">
+        <div class="container-custom grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-16">
+            <div>
+                <h3 class="text-2xl font-bold mb-6">Exclusive</h3>
+                <h4 class="text-lg font-medium mb-4">Subscribe</h4>
+                <p class="text-sm mb-4">Get 10% off your first order</p>
+                <div
+                    class="border border-white rounded px-4 py-3 flex justify-between items-center w-full max-w-[220px]">
+                    <input type="email" placeholder="Enter your email"
+                        class="bg-transparent outline-none text-sm w-full placeholder-gray-500">
+                    <i class="fa-regular fa-paper-plane"></i>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-medium mb-6">Support</h3>
+                <ul class="space-y-4 text-sm text-gray-300">
+                    <li>111 Bijoy sarani, Dhaka, <br> DH 1515, Bangladesh.</li>
+                    <li>exclusive@gmail.com</li>
+                    <li>+88015-88888-9999</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-medium mb-6">Account</h3>
+                <ul class="space-y-4 text-sm text-gray-300">
+                    <li><a href="account.html">My Account</a></li>
+                    <li><a href="login.html">Login / Register</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="Wishlist.html">Wishlist</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-medium mb-6">Quick Link</h3>
+                <ul class="space-y-4 text-sm text-gray-300">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-medium mb-6">Download App</h3>
+                <p class="text-xs text-gray-400 mb-2">Save $3 with App New User Only</p>
+                <div class="flex gap-2">
+                    <div class="bg-white w-20 h-20 p-1">
+                        <img src="assests/Qrcode.png" alt="QR" class="w-full h-full">
+                    </div>
+                    <div class="flex flex-col justify-between h-20">
+                        <div
+                            class="bg-black border border-gray-600 rounded px-2 py-1 flex items-center gap-1 w-28 cursor-pointer">
+                            <i class="fa-brands fa-google-play text-xl"></i>
+                            <div class="flex flex-col leading-none">
+                                <span class="text-[8px] uppercase">Get it on</span>
+                                <span class="text-[10px] font-medium">Google Play</span>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-black border border-gray-600 rounded px-2 py-1 flex items-center gap-1 w-28 cursor-pointer">
+                            <i class="fa-brands fa-apple text-xl"></i>
+                            <div class="flex flex-col leading-none">
+                                <span class="text-[7px] uppercase">Download on the</span>
+                                <span class="text-[10px] font-medium">App Store</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-6 mt-6 text-xl">
+                    <i class="fa-brands fa-facebook-f cursor-pointer hover:text-gray-400"></i>
+                    <i class="fa-brands fa-twitter cursor-pointer hover:text-gray-400"></i>
+                    <i class="fa-brands fa-instagram cursor-pointer hover:text-gray-400"></i>
+                    <i class="fa-brands fa-linkedin-in cursor-pointer hover:text-gray-400"></i>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 text-center py-6 text-gray-500 text-sm">
+            &copy; Copyright HAMZFLST.TECH 2026. All right reserved
+        </div>
+    </footer>
+
+    <!-- footer end -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
